@@ -1,0 +1,6 @@
+# qbe-std
+Search code for Query-by-example Spoken Term Detection
+
+
+The task of a query-by-example spoken term detection (QbE-STD) is to find a spoken query within a spoken audio. A key aspect of QbE-STD is to enable searching in multi-lingual and multi-speaker audio data. A traditional QbE-STD approach is to convert spoken audio into a sequence of symbols using automatic speech recognition (ASR) and then perform text based search. ASR-based techniques assume the availability of labelled data for training the acoustic and language models. Such approaches are not scalable for languages where there is no avail- ability or the resources to build an ASR. To overcome this limitation, zero prior knowledge is assumed about the language of the spoken audio, and thus dynamic time warping (DTW) based techniques are exploited for QbE-STD.
+One of the contributions of my thesis is to investigate the use of a variant of DTW-based algorithm referred to as non-segmental DTW and analyze the search performance using Gauss- sian posteriorgrams of acoustic features such as MFCC, FDLP, etc. and model-based features such as probabilistic and bottle-neck features. I have been participating and building QbE-STD systems for MediaEval challenge from 2011. For a detailed description on the implementation of NS-DTW kindly refer to the “search.cu” code
